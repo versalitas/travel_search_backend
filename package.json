@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/versalitas/search_engine#readme",
   "dependencies": {
+    "amadeus": "^8.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
