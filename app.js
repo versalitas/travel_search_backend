@@ -1,6 +1,5 @@
 require('dotenv').config();
-const initDB = require('./utils/connectDB.js')
-
+const sequelize = require('./utils/connectDB.js')
 
 // server set up
 const express = require('express');
@@ -8,8 +7,7 @@ const app = express();
 const server = require('http').Server(app);
 const PORT = process.env.PORT || 3000;
 
-// connecting to database
-initDB();
+
 
 // Middlewares
 app.use(express.json());
