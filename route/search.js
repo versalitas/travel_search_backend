@@ -1,11 +1,8 @@
-
 const express = require('express');
-
-// Create router
-const router = express.Router();
+const app = express.Router();
 
 const search = require('../controller/search.js')
-router.post( '/search', search);
+router.get( '/', search);
 
 
 module.exports = router;

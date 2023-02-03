@@ -1,19 +1,19 @@
 require('dotenv').config();
-const sequelize = require('./utils/connectDB.js')
 
-// server set up
+// server set up essentials
 const express = require('express');
 const app = express();
 const server = require('http').Server(app);
 const PORT = process.env.PORT || 3000;
 
-
+//requiering route
+const search = require('./route/search.js');
 
 // Middlewares
 app.use(express.json());
 
 // Routes
-
+app.use('/search', search);
 
 // Error handling
 app.use((req, res, next) => {
