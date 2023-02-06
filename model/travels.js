@@ -1,5 +1,32 @@
+const mongoose = require('mongoose');
+
+const travelSchema = new mongoose.Schema({
+  name: String,
+  type: {type: String, 
+          enum: ['Land Trip', 'Air Trip'],
+        required: true},
+  duration: Number,
+  cities: [String],
+  details: [
+    {
+      name: String,
+      category: Number,
+      departureCity: String,
+      departureTime: String
+    } 
+  ] 
+});
+
+const Travels = mongoose.model('Travels', travelSchema)
+
+module.exports = Travels;
+
 // hardcoded 
-const travels = [ 
+
+/*
+
+const travels = 
+[ 
     { name: 'Europe Popular Capitals', 
     type: 'Land Trip', 
     duration: 3, 
@@ -23,10 +50,10 @@ const travels = [
     name: 'Infinite Egypt',
     type: 'Air Trip',
     duration: 4,
-    cities: ['Madrid', 'القاهرة‎', 'الأقصر‎'],
+    cities: ['Madrid', 'القاهرة', 'الأقصر'],
     details: [
       { departureCity: 'Madrid', departureTime: '09:00' },
-      { departureCity: 'الأقصر‎', departureTime: '10:00' }
+      { departureCity: 'الأقصر', departureTime: '10:00' }
     ]
   },
   {
@@ -60,5 +87,5 @@ const travels = [
     ]
   }
 ];
+*/
 
-module.exports = { trips };
