@@ -1,27 +1,42 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const travelSchema = new mongoose.Schema({
-  name: String,
-  type: {type: String, 
-          enum: ['Land Trip', 'Air Trip'],
-        required: true},
-  duration: Number,
-  cities: [String],
-  details: [
-    {
-      name: String,
-      category: Number,
-      departureCity: String,
-      departureTime: String
-    } 
-  ] 
+const landTripSchema = new Schema({
+  name: { type: String },
+  category: { type: Number }
 });
 
-const Travels = mongoose.model('Travels', travelSchema)
+const airTripSchema = new Schema({
+  departureCity: { type: String },
+  departureTime: { type: String }
+});
 
-module.exports = Travels;
+const tripSchema = new Schema({
+  name: { type: String },
+  type: { type: String },
+  duration: { type: Number },
+  cities: [{ type: String }],
+  details: {
+    land: [landTripSchema],
+    air: [airTripSchema]
+  }
+});
 
-// hardcoded 
+tripSchema.pre('save', function(next) {
+  const trip = this;
+
+  if (trip.type === 'Land Trip') {
+    trip.details = { land: trip.details };
+  } else if (trip.type === 'Air Trip') {
+    trip.details = { air: trip.details };
+  }
+
+  next();
+});
+
+const Trip = mongoose.model('Trip', tripSchema);
+
+module.exports = Trip;
 
 /*
 

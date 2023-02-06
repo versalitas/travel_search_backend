@@ -1,15 +1,26 @@
 const mongoose = require('mongoose');
-const Travel = require('../model/travels.js')
-
 
 module.exports = async () => {
-
+  
     try {
     mongoose.set("strictQuery", false);
+
     let mongoDB = `mongodb://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
-    await mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
-    console.log(`Connected to ${process.env.DB_NAME} DB`);
-    } catch (err) {
-        console.log(err.message);
-    }
-}
+    
+    const options = {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+     };
+
+    mongoose.connection.on('connected', () => {
+      console.log(`Connected to ${process.env.DB_NAME} DB`);
+    });
+    mongoose.connection.on('error', (err) => {
+      console.error(`Failed to connect to the database: ${err}`);
+    });
+
+    await mongoose.connect(mongoDB, options);
+  } catch (err) {
+    console.log(err.message);
+  }
+};

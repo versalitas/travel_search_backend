@@ -3,21 +3,21 @@ require('dotenv').config();
 // server set up essentials
 const express = require('express');
 const app = express();
-//const server = require('http').Server(app);
 const PORT = process.env.PORT || 3000;
 
 const connectDB = require('./utils/connectDB.js');
+const addTrips = require('./utils/addTrips.js');
 connectDB();
-
+addTrips();
 
 //requiering route
-const travels = require('./route/travels.js');
+const trips = require('./route/trips.js');
 
 // Middlewares
 app.use(express.json());
 
 // Routes
-app.use('/travels', travels);
+app.use('/trips', trips);
 
 // Error handling
 app.use((req, res, next) => {
