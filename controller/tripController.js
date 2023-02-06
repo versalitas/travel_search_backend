@@ -1,5 +1,6 @@
 const Trip = require('../model/trips.js');
 const {validateCityName, handleError} = require('../utils/errorHandling.js');
+const formatResponse = require('../utils/formatResponse.js');
 
 const tripController = async (req, res) => {
     try {
