@@ -2,16 +2,37 @@
 
 MVP travel search engine.
 
+Project build with node.js, express.js, mongoose as ORM, and MongoDB as persistence.
+
+Requirements for running the app: Node.js installed and MongoDB.
+Postman for testing endpoints with provided collection.
+
+```
+Clone repositary into your custom IDE.
+```
+Install npm
+```
+npm init 
+```
+Run the app.js
+
+```
+npm run start
+```
+Open collection of endpoints in postman.
+
+
+The challenge:
 
 Technical Requirements:
 
 Needs to cater for changes of or additional restrictions or new features.
 
-Requirements:
 
-Minimum three letters from standard input to execute the search.
-Searches for trips with cities that match the text entered by 
-the user anywhere in the city name.
+Operational requirements:
+
+Minimum three letters from standard input requiered to execute the search.
+Retrieves results for cities that match the user input anywhere in the city name.
 
 A "land trip" has two hotels with names and categories.
 An "air trip" has two flights with departure city and departure time.
