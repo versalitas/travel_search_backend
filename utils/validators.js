@@ -4,3 +4,6 @@ const validateCityName = (cityName) => {
     }
     return cityName;
 };
+
+
+module.exports = validateCityName;

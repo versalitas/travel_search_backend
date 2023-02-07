@@ -23,9 +23,11 @@ const tripController = async (req, res) => {
                 .send({ status: 'fail', message: 'Trips not found' })
         }
 
-        //return trips formatted according to requirements
+        //return trips formatted as string instead of json
         const formattedTrips = formatResponse(trips)
+        res.setHeader('Content-Type', 'text/plain; charset=utf-8');
         return res.send(formattedTrips)
+    
     } catch (err) {
         if (err) {
             return res

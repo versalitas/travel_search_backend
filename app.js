@@ -16,7 +16,12 @@ addTrips()
 const trips = require('./route/trips.js')
 
 // Middlewares
-app.use(express.json())
+app.use(express.json());
+//correct encoding
+app.use((req, res, next) => {
+    res.setHeader('Content-Type', 'application/json; charset=utf-8');
+    next();
+  });
 
 // Routes
 app.use('/trips', trips)
