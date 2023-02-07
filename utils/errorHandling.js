@@ -1,6 +1,6 @@
 const validateCityName = (cityName) => {
     if (!cityName || cityName.length < 3) {
-        throw new BadRequestError('Valid input required, minimum 3 letters');
+        return res.status(400).send({ status: 'error', message: 'Bad request: Minimum 3 charachters requiered' });
     }
 };
 

@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 const Trip = require('../model/trips.js');
+let executed = 0;
 
 module.exports = async () => {
-  try {
+  
     const trips = [
       {
         name: 'Europe Popular Capitals',
@@ -78,15 +79,20 @@ module.exports = async () => {
        }
      }
     ];
-
+    
+  try {
+    await Trip.deleteMany({});
     await Trip.insertMany(trips);
     console.log('Data added successfully');
   } catch (err) {
     console.error(err);
   }
-};
+ };
 
 
 
+
+  
+ 
 
 
