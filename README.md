@@ -20,6 +20,7 @@ For the project to work correctly you need to have an ide eg Visual Studio Code,
 ### Installation 
 
 Clone the project to your local repository.
+
 Install the dependencies:
 
 ```
