@@ -1,8 +1,10 @@
 # TRAVEL SEARCH ENGINE
 
-MVP travel search engine.
+## MVP travel search engine for vueling hackaton.
 
-Project build with node.js, express.js, mongoose as ORM, and MongoDB as persistence.
+Project developed with node.js, express.js, mongoose as ORM, and MongoDB as persistence.
+
+
 
 Requirements for running the app: Node.js installed and MongoDB.
 Postman for testing endpoints with provided collection.
@@ -32,7 +34,7 @@ Needs to cater for changes of or additional restrictions or new features.
 Operational requirements:
 
 Minimum three letters from standard input requiered to execute the search.
-Retrieves results for cities that match the user input anywhere in the city name.
+Retrieve results for user input that match anywhere in the cities' names.
 
 A "land trip" has two hotels with names and categories.
 An "air trip" has two flights with departure city and departure time.
