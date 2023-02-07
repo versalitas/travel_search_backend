@@ -46,7 +46,6 @@ npm start
 
 Open collection of endpoints in postman and test away.
 
-.
 ## The challenge:
 
 Technical Requirements:
