@@ -2,25 +2,40 @@
 
 ## MVP travel search engine for vueling hackaton.
 
-Project developed with node.js, express.js, mongoose as ORM, and MongoDB as persistence.
+Project developed with 
+node.js, 
+express.js, 
+mongoose as ORM, 
+and MongoDB as persistence.
 
+## Getting started. 
 
+For the project to work correctly you need to have an ide eg Visual Studio Code, node.js, npm and MongoDB installed. Postman is needed to consult the testing of the endpoint.
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [Node.js and npm](https://nodejs.org/es/)
+- [MongoDB](https://docs.mongodb.com/manual/installation/)
+- [Postman](https://www.postman.com/downloads/)
 
-Requirements for running the app: Node.js installed and MongoDB.
-Postman for testing endpoints with provided collection.
+### Installation 
 
-```
-Clone repositary into your custom IDE.
-```
-Install npm
-```
-npm init 
-```
-Run the app.js
+Clone the project to your local repository.
+Install the dependencies:
 
 ```
-npm run start
+npm install
 ```
+### Environment variables .env 
+
+Enable the environment variables converting .env-template into .env and introduce pertinent data.
+
+Open connection to MongoDB server.
+
+Run the app with:
+
+```
+npm start
+```
+
 Open collection of endpoints in postman.
 
 
@@ -29,7 +44,7 @@ The challenge:
 Technical Requirements:
 
 Needs to cater for changes of or additional restrictions or new features.
-
+_The answer: Statlessness. Asynchronous code. Non relational database for horizontal scalability.
 
 Operational requirements:
 
