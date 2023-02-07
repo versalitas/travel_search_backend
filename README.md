@@ -30,6 +30,8 @@ npm install
 
 Enable the environment variables converting .env-template into .env and introduce pertinent data.
 
+### Database
+
 Open connection to MongoDB server.
 
 ### Commando
