@@ -4,13 +4,10 @@
 
 Project developed with 
 
-node.js, 
-
-express.js, 
-
-mongoose as ORM, 
-
-and MongoDB as persistence.
+- node.js, 
+- express.js, 
+- mongoose as ORM, 
+- MongoDB as persistence.
 
 ## Getting started. 
 
@@ -28,11 +25,14 @@ Install the dependencies:
 ```
 npm install
 ```
+
 ### Environment variables .env 
 
 Enable the environment variables converting .env-template into .env and introduce pertinent data.
 
 Open connection to MongoDB server.
+
+### Commando
 
 Run the app with:
 
@@ -40,10 +40,12 @@ Run the app with:
 npm start
 ```
 
-Open collection of endpoints in postman.
+### Endpoints
+
+Open collection of endpoints in postman ans start testing.
 
 
-The challenge:
+## The challenge:
 
 Technical Requirements:
 
@@ -61,11 +63,11 @@ An "air trip" has two flights with departure city and departure time.
 Supports Middle East and Asian languages.
 
 Output:
-Trip Name.
-Type of trip.
-Duration.
-Names of the cities.
-Specific details (For hotels: name and category, for flights: departure city and time).
+- Trip Name.
+- Type of trip.
+- Duration.
+- Names of the cities.
+- Specific details (For hotels: name and category, for flights: departure city and time).
 
 Example for «Mad»:
 
