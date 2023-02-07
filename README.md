@@ -44,9 +44,9 @@ npm start
 
 ### Endpoints
 
-Open collection of endpoints in postman ans start testing.
+Open collection of endpoints in postman and test away.
 
-
+.
 ## The challenge:
 
 Technical Requirements:
