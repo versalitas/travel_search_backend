@@ -22,6 +22,7 @@ const tripSchema = new Schema({
     },
 })
 
+//middleware for saving the pertinent info according to trip type
 tripSchema.pre('save', (next) => {
     const trip = this;
 

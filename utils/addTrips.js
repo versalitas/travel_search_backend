@@ -77,13 +77,13 @@ module.exports = async () => {
                 ],
             },
         },
-    ]
+    ];
 
     try {
-        await Trip.deleteMany({})
-        await Trip.insertMany(trips)
-        console.log('Data added successfully')
+        await Trip.deleteMany({});
+        await Trip.insertMany(trips);
+        console.log('Data added successfully');
     } catch (err) {
-        console.error(err)
+        console.error(err);
     }
 }

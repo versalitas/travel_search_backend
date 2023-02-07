@@ -22,6 +22,7 @@ const formatResponse = (tripsResponse) => {
       }
   
       return formattedResponse;
+      
     }).join('\n');
   };
   
