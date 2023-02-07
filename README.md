@@ -3,9 +3,13 @@
 ## MVP travel search engine for vueling hackaton.
 
 Project developed with 
+
 node.js, 
+
 express.js, 
+
 mongoose as ORM, 
+
 and MongoDB as persistence.
 
 ## Getting started. 
