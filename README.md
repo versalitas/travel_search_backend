@@ -60,8 +60,8 @@ npm run dev
 
 ### Endpoints
 
-Open collection of endpoints in postman and test away.
-Testing result of introducing 'MAD' :
+Check out the postman collection of endpoints in 'VUELING CHALLENGE'.
+Result of introducing 'MAD' :
 
 ![Demo](docs/endpoint.png)
 
