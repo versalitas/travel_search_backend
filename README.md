@@ -1,5 +1,5 @@
 ![Demo](docs/travel.png)
-©MarieGRohde
+
 
 MVP travel search challenge for vueling / nuwe hackaton.
 
@@ -94,3 +94,4 @@ Europe laying out cities; Land Trip; 3 days; Berlín, Madrid; Hotel Best Madrid 
 Infinite Egipt; Air Trip; 4 days; Madrid, القاهرة, الأقصر; Madrid 09:00, الأقصر 10:00
 Incredible China; Air Trip; 10 dies; Barcelona, Madrid, 广州市, 北京市; Madrid 09:00, 北京市 10:00
 ```
+Project and Illustration by versalitas.
