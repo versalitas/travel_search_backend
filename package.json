@@ -5,15 +5,7 @@
     "main": "app.js",
     "scripts": {
         "test": "jest",
-        "start": "node app.js",
-        "dev": "nodemon app.js",
-        "format": "prettier --write \"**/*.{js,json,md}\""
-    },
-    "prettier": {
-        "trailingComma": "es5",
-        "tabWidth": 4,
-        "semi": false,
-        "singleQuote": true
+        "start": "node app.js"
     },
     "repository": {
         "type": "git",
