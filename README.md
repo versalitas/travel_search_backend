@@ -1,4 +1,4 @@
-# TRAVEL SEARCH BACKEND
+![Demo](docs/travel.png)
 
 MVP travel search challenge for vueling / nuwe hackaton.
 
