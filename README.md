@@ -60,7 +60,7 @@ npm run dev
 Open collection of endpoints in postman and test away.
 Testing result of introducing 'MAD' :
 
-![Demo(https://github.com/versalitas/travel_search_backend.git/docs/endpoint.png)
+![Demo](https://github.com/versalitas/travel_search_backend.git/docs/endpoint.png)
 
 ## The challenge:
 
