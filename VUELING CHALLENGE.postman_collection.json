@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "a0778c39-1134-4c1b-b74e-eb03aeb1269b",
+		"name": "VUELING CHALLENGE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21149589"
+	},
+	"item": [
+		{
+			"name": "search trip",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/trips?city=ber",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"trips"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "ber"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "city=",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trips?city=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trips"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"49-8J5z2pT9WWW7ihRzU8FI94qNtEE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 10:28:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"fail\",\n    \"message\": \"Bad request: Minimum 3 characters requiered\"\n}"
+				},
+				{
+					"name": "city=MAD",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trips?city=MAD",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trips"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "MAD"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "431"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1af-EWc/7hL3Bm5wqEKiVPf7V1xd8Ko\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 10:30:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Europe Popular Capitals; Land Trip; 3 days; Madrid, Paris, London; Hotel Best Madrid 3*, Hotel Worst Paris 4* \nEurope Laying Out Cities; Land Trip; 3 days; Berlin, Madrid; Hotel Best Madrid 3*, Hotel Worst Berlin 4* \nInfinite Egypt; Air Trip; 4 days; Madrid, القاهرة, الأقصر;  Madrid 09:00, الأقصر 10:00\nIncredible China; Air Trip; 10 days; Barcelona, Madrid, 广州市, 北京市;  Madrid 09:00, 北京市 10:00"
+				},
+				{
+					"name": "city=mad",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trips?city=mad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trips"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "mad"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "431"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1af-EWc/7hL3Bm5wqEKiVPf7V1xd8Ko\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 10:30:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Europe Popular Capitals; Land Trip; 3 days; Madrid, Paris, London; Hotel Best Madrid 3*, Hotel Worst Paris 4* \nEurope Laying Out Cities; Land Trip; 3 days; Berlin, Madrid; Hotel Best Madrid 3*, Hotel Worst Berlin 4* \nInfinite Egypt; Air Trip; 4 days; Madrid, القاهرة, الأقصر;  Madrid 09:00, الأقصر 10:00\nIncredible China; Air Trip; 10 days; Barcelona, Madrid, 广州市, 北京市;  Madrid 09:00, 北京市 10:00"
+				},
+				{
+					"name": "city=广州市",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trips?city=  广州市&=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trips"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "  广州市"
+								},
+								{
+									"key": null,
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "108"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6c-d/kduKzmCu4rSWlwWDC9v0tVhtk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 12:00:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Incredible China; Air Trip; 10 days; Barcelona, Madrid, 广州市, 北京市;  Madrid 09:00, 北京市 10:00"
+				},
+				{
+					"name": "trip=广州市id=$id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trips?city=  广州市id=$id&=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trips"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "  广州市id=$id"
+								},
+								{
+									"key": null,
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4a-pw3RGv1Arz6lYCC5m/EmSm11wvU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 12:03:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"fail\",\n    \"message\": \"Bad request: Invalid characters in city name\"\n}"
+				},
+				{
+					"name": "trip=الأقصر",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trips?city=الأقصر&=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trips"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "الأقصر"
+								},
+								{
+									"key": null,
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "105"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"69-TS5F3zeXva8wHM8lOi5UM75Ngx0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 12:05:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Infinite Egypt; Air Trip; 4 days; Madrid, القاهرة, الأقصر;  Madrid 09:00, الأقصر 10:00"
+				},
+				{
+					"name": "trip=m4dr1d",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trips?city=m4dr1d&=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trips"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "m4dr1d"
+								},
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "74"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4a-pw3RGv1Arz6lYCC5m/EmSm11wvU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Feb 2023 12:15:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"fail\",\n    \"message\": \"Bad request: Invalid characters in city name\"\n}"
+				}
+			]
+		}
+	]
+}
