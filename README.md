@@ -2,7 +2,7 @@
 
 ## MVP travel search for vueling / nuwe hackaton.
 
-Project developed with 
+### Project developed with 
 
 - node.js, 
 - express.js, 
@@ -11,9 +11,10 @@ Project developed with
 
 ## Getting started. 
 
-For the project to work correctly you need to have an ide eg Visual Studio Code, node.js, npm and MongoDB installed. Postman is needed to consult the testing of the endpoint.
+For the project to work correctly you need to have an ide eg Visual Studio Code, node.js, npm and MongoDB installed. 
+Postman is needed to consult the testing of the endpoint.
+- [Node.js](https://nodejs.org/es/)
 - [Visual Studio Code](https://code.visualstudio.com/download)
-- [Node.js and npm](https://nodejs.org/es/)
 - [MongoDB](https://docs.mongodb.com/manual/installation/)
 - [Postman](https://www.postman.com/downloads/)
 
