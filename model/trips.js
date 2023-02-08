@@ -15,14 +15,23 @@ const tripSchema = new Schema({
     name: { type: String },
     type: { type: String },
     duration: { type: Number },
-    cities: [{ type: String }],
+    cities: [{ type: String, required: true }],
     details: {
         land: [landTripSchema],
         air: [airTripSchema],
     },
 })
+//middleware save in format to support multiple languages
+tripSchema.pre('save', function (next) {
+    const trip = this;
+    trip.cities = trip.cities.map((city) => {
+        return city.normalize('NFC');
+    });
+    next();
+});
 
-//middleware for saving the pertinent info according to trip type
+
+//middleware save pertinent details according to trip type
 tripSchema.pre('save', (next) => {
     const trip = this;
 

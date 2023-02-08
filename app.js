@@ -7,21 +7,23 @@ const PORT = process.env.PORT || 3000;
 
 const http = require('http');
 
-//connect to DB and add Mock data
+/* Cors middleware in case front and backend are on separate servers
+const cors = require('cors');
+const corsOptions = {}; */
+
 const connectDB = require('./utils/connectDB.js');
 const addTrips = require('./utils/addTrips.js');
-connectDB()
-addTrips()
+
+//connect to DB and add Mock data
+connectDB();
+addTrips();
 
 //requiering route
 const trips = require('./route/trips.js');
 
-// Middlewares (ensure correct encoding)
-app.use(express.json());
-app.use((req, res, next) => {
-    res.setHeader('Content-Type', 'application/json; charset=utf-8');
-    next();
-  });
+// Middlewares 
+// app.use(express.json());
+// app.use(cors(corsOptions));
 
 // Routes
 app.use('/trips', trips);
