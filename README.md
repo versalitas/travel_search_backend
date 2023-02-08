@@ -40,7 +40,12 @@ Open connection to MongoDB server.
 Run the app with:
 
 ```
-npm start
+npm run start
+```
+or checkout to dev branch in development mode
+
+```
+npm run dev
 ```
 
 ### Endpoints
