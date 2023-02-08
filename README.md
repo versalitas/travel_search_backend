@@ -1,6 +1,6 @@
 # TRAVEL SEARCH BACKEND
 
-## MVP travel search for vueling / nuwe hackaton.
+MVP travel search challenge for vueling / nuwe hackaton.
 
 ## Getting started.
 
@@ -19,9 +19,14 @@ For the project to work correctly you need to have:
 - [MongoDB](https://docs.mongodb.com/manual/installation/)
 - [Postman](https://www.postman.com/downloads/)
 
+### Project Structure
+
+![Demo]https://github.com/versalitas/travel_search_backend.git/docs/structure.png
+
 ### Installation 
 
 Clone the project to your local repository.
+Change directory to the project folder.
 
 Install the dependencies:
 
@@ -53,7 +58,9 @@ npm run dev
 ### Endpoints
 
 Open collection of endpoints in postman and test away.
+Testing result of introducing 'MAD' :
 
+![Demo]https://github.com/versalitas/travel_search_backend.git/docs/endpoint.png
 ## The challenge:
 
 ### Technical Requirements:
