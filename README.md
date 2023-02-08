@@ -1,7 +1,7 @@
 ![Demo](docs/travel.png)
 
 
-MVP travel search challenge for vueling / nuwe hackaton.
+vueling / nuwe hackaton.
 
 ## Getting started.
 
