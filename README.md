@@ -1,4 +1,5 @@
 ![Demo](docs/travel.png)
+©MarieGRohde
 
 MVP travel search challenge for vueling / nuwe hackaton.
 
