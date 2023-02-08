@@ -1,19 +1,19 @@
 const Trip = require('../model/trips.js');
+const validateCityName = require('../utils/validators.js');
 const handleError  = require('../utils/errorHandlers.js');
 const formatResponse = require('../utils/formatters.js');
-const validateCityName = require('../utils/validators.js');
 
 const tripController = async (req, res) => {
-    let cityName = req.body.name;
+    let cityName = req.query.city;
 
     try {
-        //validate cityName
-        cityName = (cityName || '').toString().trim();
-        const city = validateCityName(cityName);
-
+       
+        let city = validateCityName(cityName);
+        city = city.normalize('NFC');
+      
         //find trips with case insensitive search
         let trips = await Trip.find({
-            cities: { $regex: new RegExp(city, 'i') },
+            cities: { $regex: new RegExp(city, 'i')},
         }).select('-__v');
 
         //if no trips return error
@@ -39,3 +39,5 @@ const tripController = async (req, res) => {
 }
 
 module.exports = tripController;
+
+

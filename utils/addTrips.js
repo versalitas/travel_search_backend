@@ -60,7 +60,16 @@ module.exports = async () => {
                 land: [
                     { name: 'Hotel Best Udine', category: 5 },
                     { name: 'Hotel Worst Split', category: 4 },
-                    { name: 'Hotel So-so Bergamo', category: 4 },
+                ],
+            },
+        },
+        {
+            name: 'Faulty travels',
+            type: 'Land Trip',
+            duration: 3,
+            cities: ['Bath', 'Brighton', 'Hastings'],
+            details: {
+                land: [
                 ],
             },
         },
@@ -73,7 +82,6 @@ module.exports = async () => {
                 land: [
                     { name: 'Hotel Best Girona', category: 5 },
                     { name: 'Hotel Worst Tarragona', category: 4 },
-                    { name: 'Hotel So-so Berga', category: 4 },
                 ],
             },
         },
