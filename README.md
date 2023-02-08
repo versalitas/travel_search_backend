@@ -13,6 +13,7 @@ The project has been developed with:
 - mongoose as ORM, 
 - MongoDB as persistence.
 ````
+The road to hell is paved with good intentions. My intentions were to achieve statelessness, horizontal scaling (Mongo DB), and a modular structure.
 
 For the project to work correctly you need to have this installed
 as well as favourite IDE:
