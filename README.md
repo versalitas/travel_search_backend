@@ -44,7 +44,7 @@ Run the app with:
 ```
 npm run start
 ```
-or checkout to dev branch in development mode
+or checkout to dev branch and run in development mode
 
 ```
 npm run dev
