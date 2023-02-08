@@ -21,7 +21,7 @@ For the project to work correctly you need to have:
 
 ### Project Structure
 
-![Demo](https://github.com/versalitas/travel_search_backend/docs/structure.png)
+![Demo](docs/structure.png)
 
 ### Installation 
 
