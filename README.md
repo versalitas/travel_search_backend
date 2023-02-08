@@ -1,6 +1,6 @@
-# TRAVEL SEARCH ENGINE
+# TRAVEL SEARCH BACKEND
 
-## MVP travel search engine for vueling hackaton.
+## MVP travel search for vueling / nuwe hackaton.
 
 Project developed with 
 
